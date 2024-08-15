@@ -1,0 +1,59 @@
+﻿@model App4.Models.Produto
+@{
+    ViewData["Title"] = "CadastrarProduto";
+}
+
+<h1>CadastrarProduto</h1>
+
+<form action="" method="post">
+
+    <hr />
+    <div class="form-group">
+        <label class="control-label" asp-for="codigo"></label>
+        <span asp-validation-for="codigo" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="codigo" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" asp-for="nome"></label>
+        <span asp-validation-for="nome" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="nome" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" asp-for="preco"></label>
+        <span asp-validation-for="preco" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="preco">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" asp-for="descricao"></label>
+        <span asp-validation-for="descricao" class="text-danger"></span>
+        <div class="col-10">
+            <textarea class="control-label" asp-for="descricao"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" asp-for="marca"></label>
+        <span asp-validation-for="marca" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="marca" />
+        </div>
+    </div>
+    <br /><br />
+    <div class="form-group">
+        <div class="col-md-offset-2 ">
+            <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            <a class="btn btn-secondary" href="~/Home/Index">Cancelar</a>
+        </div>
+    </div>
+</form>
+
+
